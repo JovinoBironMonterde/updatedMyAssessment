@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&family=Nunito:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior:smooth;
+ 
+}
+
+
+             /***   HOME SECTION   ***/
+
+.home-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/picture2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2000000;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    z-index: 99999999999;
+}
+nav .logo{
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: lightgray;
+    border-bottom: 2px solid orange;
+    transition: all .3s;
+}
+
+nav ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height:  3px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+label .show{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.hero-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.hero-text{
+    margin-top: 250px;
+    color:cornsilk;
+}
+.hero-text h1{
+    font-size: 80px;
+    font-weight: 600;
+    
+}
+.hero-btn{
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+button {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    color: white;
+}
+button:hover{
+    background-color: lightgray;
+    color: black;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/***   PROFESSIONAL SECTION   ***/
+
+.professional-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #DCDCDC;
+    padding-bottom: 60px;
+  
+}
+.skill-container{
+    position: relative;
+    width: 100%;
+    height:auto;
+    
+
+}
+
+
+.skill-title span{
+    color: orangered;
+}
+.skill-title{
+    display: flex;
+    padding-top: 110px;
+    align-items: center;
+    justify-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.skill-title hr{
+    width: 40%;
+    height: 10px;
+    background-color: crimson;
+    border: none;
+
+ }
+ .skill-title h2{
+    text-align: center;
+    margin-left: 5px;
+
+    color: orange;
+}
+.bar-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+
+.round-bar{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 125px 10%;
+    justify-content: center;
+   
+
+}
+
+
+.round-bar .outer{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 80px;
+    text-align: center;
+    border: .2px solid #DCDCDC;
+ 
+}
+
+.inner{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px 1px rgba(0,0,0,0.2);
+    background-color: #DCDCDC;
+    text-align: center;
+    border: .2px solid #DCDCDC;
+}
+
+.wordpress{
+    
+    background:  conic-gradient( #3f8f8f 220deg, white 0deg);
+}
+.figma{
+    background:  conic-gradient(#3f8f8f 210deg, white 0deg);
+}
+.photoshop{
+   
+    background:  conic-gradient(#3f8f8f 320deg, white 0deg);
+}
+.illustrator{
+    background:  conic-gradient(#3f8f8f 245deg, white 0deg);
+}
+
+.javascript{
+    background:  conic-gradient(#3f8f8f 280deg, white 0deg);
+}
+.htmlcss{
+ 
+    background:  conic-gradient(#3f8f8f 220deg, white 0deg);
+}
+                 
+.icon{
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 28px;
+    justify-content: center;
+    color: darkslategrey;
+}
+
+.title{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+.percent{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -12px;
+    font-weight: 600;
+    font-size: 15px;
+    color: crimson;
+}
+.title-left{
+    margin-top: -45px;
+    margin-left: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+              /***   EXPERIENCE SECTION   ***/
+
+.experience-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color:#0f3c4d;
+    padding-bottom: 20px;
+}
+.experience-container{
+    position: relative;
+    padding-top: 10%;
+
+}
+.experience-title span{
+  color: orangered;
+}
+.experience-title{
+    display: flex;
+    width: 100%;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    padding-top: 20px;
+}
+.experience-title h1{
+    text-align: center;
+    padding-right: 14px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+.experience-title hr{
+    display: flex;
+    float: right;
+    position: relative;
+    width: 40%;
+    height: 10px;
+    background-color: orangered;
+    border: none;
+}
+.work-con{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 10% auto;
+    margin-bottom: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    margin-bottom: 60px;
+    top: 0;
+
+}
+
+.img-right{
+    display: none;
+  
+}
+
+.work-con .box .img-left{
+    flex: 50%;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.work-con .box .text-right{
+    flex: 50%;
+    float: right;
+    text-align: left;
+    margin-left: 40px;
+    padding-right: 33px;
+}
+img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+ .work-con .box .img{
+
+    flex: 50%;
+    text-align: left;
+    margin-left: 40px;
+}
+.work-con .box .text{
+ 
+    flex: 50%;
+    float: right;
+    text-align: right;
+    margin-right: 40px;
+    padding-left: 33px;
+}
+
+.box h3{
+    margin-top: 20px;
+    color: darkgoldenrod;
+}
+.box h1,h2{
+    color: orange;
+}
+.box p{
+    color: white;
+}
+.work-con::before{
+    position: absolute;
+    content: '';
+   border: none;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    top: 12px;
+    background-color: gainsboro;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 10px;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+  /** END EXPERIENCE SECTION **/
+
+  /** START PORTFOLIO SECTION **/
+.portfolio-section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(/img/pexels-photo-5673488.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio-bg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    background-color: rgba(127, 255, 212, .5);
+}
+.portfolio-section span{
+    color: orangered;
+}
+.port-title{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: right;
+    align-items: center;
+    justify-content: left;
+    padding-top: 120px;
+}
+.port-title h1{
+    text-align: center;
+    padding-left: 14px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+.port-title hr{
+    position: relative;
+    width: 40%;
+    height: 10px;
+    background-color: orangered;
+    border: none;
+}
+.portfolio-container{
+    position: relative;
+    display: flex;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.protfolio-box{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+    margin: 10px;
+}
+.div-box{
+    position: relative;
+    width: 25%;
+    height: 15%;
+    border-radius: 10px; 
+    margin: 2%;
+}
+.div-box img{
+    border-radius: 10px;
+}
+.div-box h1{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    opacity: 0;
+    padding: 10%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: rgb(63, 143, 143, .8);
+    transition: all .3s;
+    color: orange;
+    font-size: 14   0%;
+  }
+  .div-box:hover  h1{
+    opacity: 1;
+  }
+  .div-box:hover {
+    cursor: pointer;
+    transform: rotate(5deg);
+    transition: all .3s ;
+  }
+  /** END PORTFOLIO SECTION **/
+
+
+
+/** START CONTACT SECTION **/
+.contact-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: darkslategrey;
+}
+.contact-container{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.con-title{
+    position: relative;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    margin-top: 120px;
+    right: 0;
+}
+.con-title h1{
+    text-align: center;
+    padding-right: 14px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+.con-title span{
+    color: orangered;
+}
+.con-title hr{
+    display: flex;
+    float: right;
+    position: relative;
+    width: 40%;
+    height: 10px;
+    padding-right: 14px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    background-color: orangered;
+    border: none;
+}
+form{
+    margin-top: 50px;
+ 
+}
+form input{
+    width: 590px;
+    height: 36px;
+    padding-left: 16px;
+    margin-top: 10px;
+    
+}
+form .phone-email{
+    width: 295px;
+}
+
+form input[type="fullname"], textarea{
+    width: 595px;
+    margin-top: 10px;
+   
+}
+textarea{
+    resize: none;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+button{
+    font-size: 20px;
+    padding: 6px 30px;
+}
+.con-email{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+}
+.con-email hr{
+    width: 20%;
+    margin: 40px auto;
+}
+.con-email{
+    font-size: 90%;
+}
+/** END CONTACT SECTION **/
+
+
+/** START FOOTER**/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(13, 29, 29);
+}
+footer i{
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 2rem;
+   color:gray;
+}
+footer i:hover{
+    color: lightgray;
+    cursor: pointer;
+}
+/** END FOOTER**/
+
+
+/** ANIMATION REVEAL**/
+.reveal{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+
+.reveal.active{
+    transform: translate(0px);
+    opacity: 1;
+    
+}
+/** END ANIMATION REVEAL**/
+
+
+
+/** START FOR RESPONSIVE**/
+
+@media (max-width: 1250px){
+    .work-con .box img{
+        width: 95%;
+    }
+    .outer{
+        margin:  40px;
+    }
+    .round-bar{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1050px){
+    .work-con .box img{
+        width: 95%;
+    }
+    .outer{
+        margin:  10px;
+    }
+    .round-bar{
+        margin-bottom: 30px;
+    }
+    .round-bar{
+        margin: 5px;
+        margin-top: 90px;
+    }
+    .div-box h1{font-size: 130%;}
+}
+
+
+@media (max-width: 950px){
+    .round-bar{
+        margin: 5px;
+        margin-top: 90px;
+    }
+    .outer{
+        
+        margin: 40px;
+        margin-top: 90px    
+    }
+    .work-con .box img{
+        width: 95%;
+    }
+    .div-box h1{font-size: 120%;}}
+
+@media (max-width: 870px){
+        .round-bar .outer{          
+            margin: 50px;
+        }
+        
+        .work-con{        
+            margin: 5% auto;
+
+        }
+        .div-box h1{font-size: 110%;} 
+ }
+
+@media (max-width: 850px){
+    nav .logo{
+        top: 10pxpx;
+        left: 10px;
+       
+    }
+    .outer{  
+        margin: 30px;
+        margin-top: 10%;
+    }
+    .work-con .box img{
+        width: 95%;
+    }
+    .skill-title hr{
+        width: 35%;
+        font-size: 15px;  
+     }
+     .div-box h1{font-size: 100%;}
+    }
+
+@media (max-width: 750px) {
+    .outer{ 
+        margin: 20px;
+        margin-top: 80px;
+    }
+    .work-con .box img{
+        width: 95%;
+    }
+
+    form .phone-email{
+        width: 195px;
+    }
+    
+    form input[type="fullname"], textarea{
+        width: 395px;
+        margin-top: 10px;   
+    }
+}
+
+@media (max-width: 700px){
+    nav .logo{
+        top: 10pxpx;
+        left: 10px;
+    }
+    ul  .close{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 30px;
+        color: lightgrey;
+    }
+    label .show{
+        display: block;
+        margin-right: 10px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2C3E50;
+        top: -100%; 
+        padding-top: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin:  1px 0;
+    }
+    #check:checked ~ ul{
+        top: 0%;
+        transition: all 0.5s ease;
+        display: block;
+     }
+    .skill-title hr{
+        width: 35%;
+    }
+    .round-bar .outer{  
+        width: 120px;
+        height: 120px;
+        margin: 30px;
+        margin-top: 60px;
+    }  
+    .inner{
+        width: 90px;
+        height: 90px;      
+    }
+    .experience-title{
+        margin: 80px 0px;
+    }
+    .experience-title h1{
+        font-size: 30px;
+    }
+    .experience-title hr{
+        width: 35%;
+    }
+ .work-con{
+    margin-top: 50px;
+ }
+    .work-con::before{ 
+        left: -5%;
+       
+    }
+    .box::after{
+        left: -5%;
+        top: 20px;
+        transform: translate(-50%,-50%);
+    }
+    .box{
+        padding-left: 10px;
+        padding-right: 0;
+        display: block;
+        text-align: left;
+        padding-bottom: 10px; 
+    }
+   .img-left{
+    display: none;
+   }
+   .work-con .box .img-right{
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+   }
+   .work-con .box .img{
+   
+     padding: 0;
+     margin: 0;
+     text-align: center;
+   }
+   .work-con .box .text-right{
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: justify;  
+   }
+   .work-con .box .text{
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0px 11px;
+    text-align: left;
+    text-align: justify;
+    
+   }
+   .port-title{
+    padding-top: 110px;
+   }
+   .port-title h1{
+    font-size: 30px;
+   }
+   .port-title hr{
+    width: 33%;
+   }
+   .div-box{
+     width: 40%;
+    height: 30%;
+    margin: 3%;
+}
+   .div-box h1{font-size: 80%;}
+   .con-title hr{
+    width: 35%;
+   }
+}
+
+@media (max-width: 600px){
+    .outer{
+        width: 120px;
+        height: 120px;
+        margin-top: 10%;
+    }
+    .round-bar .outer{  
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        margin-top: 70px;
+    }  
+    .inner{
+        width: 90px;
+        height: 90px;      
+    }
+    .skill-title hr{
+        width: 30%;
+     }
+     .skill-title h2{
+        font-size: 25px;
+     }
+     .experience-title{
+        margin: 80px 0px;
+    }
+    .experience-title h1{
+        font-size: 30px;
+    }
+    .experience-title hr{
+        width: 28%;
+    }
+}
+
+
+@media (max-width: 550px){
+    .hero-text h1{
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .round-bar .outer{  
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        margin-top: 70px;
+    }  
+    .inner{
+        width: 90px;
+        height: 90px;      
+    }
+    form .phone-email{
+        width: 150px;
+    }
+    form input[type="fullname"], textarea{
+        width: 305px;
+        margin-top: 10px;   
+    }
+    .con-title hr{
+        width: 25%;
+       }
+    .con-title h1{
+        font-size: 1.8rem;
+    }
+    .con-email h3{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 480px){
+    .round-bar .outer{  
+        width: 120px;
+        height: 120px;
+        margin: 30px;
+        margin-top: 70px;
+    }  
+    .inner{
+        width: 90px;
+        height: 90px;      
+    }
+    .skill-title hr{
+        width: 25%;
+      
+     }
+     .skill-title h2{
+        font-size: 25px;
+     }
+      .port-title{
+    padding-top: 120px;
+   }
+   .port-title h1{
+    font-size: 30px;
+   }
+   .port-title hr{
+    width: 28%;
+   }
+   .protfolio-box{
+    display: block;
+   }
+   .div-box{
+     width: 80%;
+    height: 60%;
+    margin: 5% auto ;
+}
+
+   .div-box h1{font-size: 80%;}
+}
+@media (max-width: 450px){
+ 
+    .hero-btn{
+        display: block;
+    }
+  
+    .experience-title h1{
+        font-size: 30px;
+    }
+    .experience-title hr{
+        width: 25%;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-text h1{
+        font-size: 40px;
+        font-weight: 600;    
+    }
+    button {
+        padding: 5px 20px;
+        margin: 5px;
+    }
+    .round-bar .outer{  
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+        margin-top: 90px;
+    }  
+    .inner{
+        width: 70px;
+        height: 70px;      
+    }
+    .inner .icon{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .experience-title h1{
+        font-size: 30px;
+    }
+    .experience-title hr{
+        width: 25%;
+    }
+}
+
+@media (max-width: 360px){
+    .outer{
+        width: 100px;
+        height: 100px;
+        margin: 2%;
+        margin-top: 30%;
+    }
+    .skill-title hr{
+        width: 20%;
+     }
+     .skill-title h2{
+        font-size: 25px;
+     }
+    .round-bar .outer{  
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        margin-top: 70px;
+    }  
+    .inner{
+        width: 70px;
+        height: 70px;      
+    }
+    .experience-title h1{
+        font-size: 25px;
+    }
+    .experience-title hr{
+        width: 23%;
+    }
+    .port-title{
+        padding-top: 120px;
+       }
+       .port-title h1{
+        font-size: 30px;
+       }
+       .port-title hr{
+        width: 18%;
+       }
+       form .phone-email{
+        width: 124px;
+    }
+    
+    form input[type="fullname"], textarea{
+        width: 250px;
+        margin-top: 10px;  
+    }
+    footer i{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
