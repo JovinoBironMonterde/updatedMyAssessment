@@ -5,7 +5,7 @@
     slidebar.style.top = "0"
  }
  function hidemenu(){
-    slidebar.style.top = "-100%";
+    slidebar.style.top = "-150%";
  }
  
 
